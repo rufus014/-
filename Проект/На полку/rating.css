@@ -1,0 +1,37 @@
+/*ОЦЕНКА*/
+.rating-area {
+    width: 120px;
+}
+/*Убирает предыдущий метод оценивания (круги)*/
+.rating-area:not(:checked) > input {
+    display: none;
+}
+/*********************************************/
+.rating-area:not(:checked) > label {
+    float: right; /* Выравнивание по правому краю */
+    width: 23px; /* Ширина звёздочек */
+    font-size: 32px; /* Размер звёздочек */
+    line-height: 32px; /* Высота звёздочек */
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+/*Добавляет звёздочки*/
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+/*********************/
+/*Сохраняет оценку*/
+.rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+/*****************/
+/*При наведении меняеет цвет*/
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+/*****************/
+
+/*||||||*/
+

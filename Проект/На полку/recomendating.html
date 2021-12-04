@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>На полку</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="recomendating.css">
+    <link rel="shortcut icon" href="icons/book-shelf.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <a id="logo-ref" href="mainPage.html"><img id="logo" src="icons/logo.png" alt="логотип"></a>
+        <h1>На <span id="shop_name">полку</span></h1>
+        <div class="dropdown">
+            <img class="menu" src="icons/menu.png" alt="menu">
+            <nav class="dropdown-content">
+                <a href="mainPage.html">Главная</a>
+                <a href="books.html">Книги</a>
+                <a href="comics.html">Комисксы</a>
+                <a href="recomendating.html">Рекомендации <br> на месяц</a>
+                <a href="sales.html">Скидки</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+    <section class="bookRec">
+        <div class="book">
+            <h1>Книга №1</h1>
+            <h1>Крампус: повелитель Йоля</h1>
+            <img src="photo/recomendation/krampusRec.jpg" class="picture" alt="crampus_img">
+            <button id="hider-1" class="hideButton">Тык</button>
+        </div>
+        <div id="text-1" class="bookReview">
+            <div>
+                Кто был первым, Санта-Клаус или Крампус? <br> 
+                Можно,конечно, поспорить,что оба они имеют общие корни, <br> 
+                но разнообразные версии Крампуса появились гораздо <br> 
+                раньше,чем обладающие человеческими чертами,<br> 
+                исполненные милосердия  версии Санта-Клауса.
+            </div>
+            <a href="../public_html/Books/Krampus.html"><div class="bookPage">Страница книги</div></a>
+        </div>
+    </section>
+
+    <section class="bookRec">
+        <div class="book">
+            <h1>Книга №2</h1>
+            <h1>Рождественская песнь</h1>
+            <img src="photo/recomendation/christmasStory.jpg" class="picture" alt="crampus_img">
+            <button id="hider-2" class="hideButton">Тык</button>
+        </div>
+        <div id="text-2" class="bookReview">
+            <div>
+                «Рождественская песнь в прозе» повесть Чарльза Диккенса о <br> 
+                волшебных изменениях в человека благодаря магии Рождества.<br> 
+                Главный герой — старый мрачный скряга Эбинейзер Скрудж, <br> 
+                который давно уже никого и ничего не любит, кроме собственных денег.<br> 
+                Он не понимает радости, которую другие испытывают<br>  
+                по поводу приближающегося Рождества и Святок, и брезгливо отклоняет приглашение <br> 
+                своего доброго племянника отпраздновать Рождество с ним и его семьёй.<br> 
+                Он не может понять, зачем люди целый день веселятся и <br> 
+                не работают, если это не приносит им выгоды, и <br> 
+                отказывается пожертвовать благотворителям деньги на помощь нуждающимся детям.
+            </div>
+            <a href="../public_html/Books/RogdSkazka.html"><div class="bookPage">Страница книги</div></a>
+        </div>
+    </section>
+
+    <section class="bookRec">
+        <div class="book">
+            <h1>Книга №3</h1>
+            <h1>Бойцовский клуб</h1>
+            <img src="photo/recomendation/fightClub.jpg" class="picture" alt="crampus_img">
+            <button id="hider-3" class="hideButton">Тык</button>
+        </div>
+        <div id="text-3" class="bookReview">
+            <div>
+                You don't talk about fight club. <br>
+                When someone says stop, or goes limp, even if he's just faking it, the fight is over.<br>
+                Only two guys to a fight.<br>
+                One fight at a time.<br>
+                They fight without shirts or shoes.<br>
+                The fights go on as long as they have to.<br>
+                If this is your first night at fight club, you have to fight.
+            </div>
+            <a href="../public_html/Books/fightClub.html"><div class="bookPage">Страница книги</div></a>
+        </div>
+    </section>
+    <script src="recomendating.js" type="text/javascript"></script>
+    </main>
+
+    <footer>
+        <div id="menu">
+            <a href="mainPage.html">Главная</a>
+            <a href="books.html">Книги</a>
+            <a href="">Комиксы</a>
+            <a href="recomendating.html">Рекомендации</a>
+            <a href="sales.html">Скидки</a>
+            <a href="">Новинки</a>
+        </div>
+
+        <div id="media">
+            <a><img src="icons/telegram.png" alt="telegram"></a>
+            <a><img src="icons/instagram.png" alt="instagram"></a>
+            <a><img src="icons/vk.png" alt="vkontakte"></a>
+        </div>
+
+        <div id="adres">
+            <p>На полку</p>
+            <p>Адрес 1</p>
+            <p>Адерус 2</p>
+        </div>
+    </footer>
+</body>
+</html>

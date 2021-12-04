@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>На полку</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../carousel.js" type="text/javascript"></script>
+        <script src="Комментарий.js" type="text/javascript"></script>
+	    <link rel="stylesheet" type="text/css" href="../base.css">
+        <link rel="stylesheet" type="text/css" href="book.css">
+        <link rel="stylesheet" type="text/css" href="../carousel.css">
+        <link rel="shortcut icon" href="../icons/book-shelf.png" type="image/png">
+    </head>
+    <body>
+
+        <header>
+            <a id="logo-ref" href="../mainPage.html"><img id="logo" src="../icons/logo.png" alt="логотип"></a>
+            <h1>На <span id="shop_name">полку</span></h1>
+            <div class="dropdown">
+                <img id="logo" src="../icons/menu.png" alt="menu">
+                <nav class="dropdown-content">
+                    <a href="../mainPage.html">Главная</a>
+                    <a href="../books.html">Книги</a>
+                    <a href="../comics.html">Комисксы</a>
+                    <a href="../recomendating.html">Рекоммендации <br> на месяц</a>
+                    <a href="../sales.html">Скидки</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="book">
+                <section id="photo">
+                    <div>
+                        <div id="owl-carousel">
+                            <div class="carousel-item" style="display: block;"><img src="../photo/books/lunapark_1.jpg" alt="1" ></div>
+                            <div class="carousel-item" style="display: none;"><img src="../photo/books/lunapark_2.jpg" alt="2"></div>
+                            <a href="#" class="js-prev" onclick="plusSlides(-1)"><span></span></a>
+                            <a href="#" class="js-next" onclick="plusSlides(1)"><span></span></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="description">
+                    <div id="text">
+                        <h1>Луна-парк</h1>
+                        <h2>Ричард Лаймон</h2>
+                        <br>
+                        <p id="annotation"><span >Аннотация:</span><br>
+                            Курортный городок Болета-Бэй славен своими пляжами и большим 
+                            парком аттракционов Фанленд на берегу океана. Но достопримечательности 
+                            привлекают не только отдыхающих, но и множество бездомных, получивших 
+                            прозвище тролли. Зачастую агрессивные и откровенно безумные, они пугают 
+                            местных жителей, в Болета-Бэй все чаще пропадают люди, и о городе ходят 
+                            самые неприятные слухи, не всегда далекие от истины. Припугнуть бродяг 
+                            решает банда подростков, у которых к троллям свои счеты. В дело вмешивается 
+                            полиция, но в Фанленде все не то, чем кажется. За яркими красками и ослепляющим 
+                            светом таится нечто гораздо страшнее любой комнаты страха, и ночью парк 
+                            аттракционов становится настоящим лабиринтом ужасов, откуда далеко не все выберутся живыми.
+                        </p>
+                        <div id="info">
+                            <pre>
+    <span>Издательство</span>       АСТ<br>
+    <span>Серия</span>              Мастера ужасов<br>
+    <span>Год издания</span>        2018<br>
+    <span>Кол-во страниц</span>     639<br>
+    <span>Формат</span>             20.7 x 13.1 x 4.3<br>
+    <span>Тип обложки</span>        Твердая бумажная<br>
+    <span>Тираж</span>              3000<br>
+    <span>Вес, г</span>             540<br>
+                            </pre>
+                        </div>
+                        <div id="price">
+                            Цена: 500р.
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="comment">
+                <h3>Комментарий:</h3>
+                <div id="com">
+                    <div>
+                        <textarea id="userName" placeholder="имя пользователя"></textarea>
+                        <select id="rating"> 
+                            <option value="1*">оценка 1*</option>
+                            <option value="2*">оценка 2*</option>
+                            <option value="3*">оценка 3*</option>
+                            <option value="4*">оценка 4*</option>
+                            <option value="5*">оценка 5*</option>
+                            <option value="6*">оценка 6*</option>
+                            <option value="7*">оценка 7*</option>
+                            <option value="8*">оценка 8*</option>
+                            <option value="9*">оценка 9*</option>
+                            <option value="10*">оценка 10*</option>
+                        </select>
+                        <textarea id="textarea" placeholder="текст комментария"></textarea>
+                    </div>
+                    <button id="commentButton"><img src="../icons/check.png"></button>
+                </div>    
+                <div id="com_area">
+                    <h5>Здесь будут появляться коментарии
+                    </h5>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div id="menu">
+                <a href="../mainPage.html">Главная</a>
+                <a href="../books.html">Книги</a>
+                <a href="../comics.html">Комиксы</a>
+                <a href="../recomendating.html">Рекомендации</a>
+                <a href="../sales.html">Скидки</a>
+            </div>
+
+            <div id="media">
+                <a><img src="../icons/telegram.png" alt="telegram"></a>
+                <a><img src="../icons/instagram.png" alt="instagram"></a>
+                <a><img src="../icons/vk.png" alt="vkontakte"></a>
+            </div>
+
+            <div id="adres">
+                <p>На полку</p>
+                <p>Адрес 1</p>
+                <p>Адерус 2</p>
+            </div>
+        </footer>
+    </body>
+</html>
