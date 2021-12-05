@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>На полку</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Книги/18plus.js" type="text/javascript"></script>
+    	<link rel="stylesheet" type="text/css" href="base.css">
+        <link rel="stylesheet" type="text/css" href="card.css">
+        <link rel="stylesheet" type="text/css" href="carousel.css">
+        <script src="carousel.js" type="text/javascript"></script>
+        <link rel="shortcut icon" href="icons/book-shelf.png" type="image/png">
+    </head>
+    <body>
+        
+        <header>
+            <a id="logo-ref" href="mainPage.html"><img id="logo" src="icons/logo.png" alt="логотип"></a>
+            <h1>На <span id="shop_name">полку</span></h1>
+            <div class="dropdown">
+                <img class="menu" src="icons/menu.png" alt="menu">
+                <nav class="dropdown-content">
+                    <a href="mainPage.html">Главная</a>
+                    <a href="books.html">Книги</a>
+                    <a href="comics.html">Комисксы</a>
+                    <a href="recomendating.html">Рекомендации <br> на месяц</a>
+                    <a href="sales.html">Скидки</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="carousel">
+            <div id="owl-carousel">
+                <div class="carousel-item" style="display: block;"><a href="recomendating.html"><img src="photo/Рекомендации на месяц.jpg" alt="1"></a></div>
+                <div class="carousel-item" style="display: none;"><a href="sales.html"><img src="photo/Скидки.jpg" alt="2"></a></div>
+                <a href="#" class="js-prev" onclick="plusSlides(-1)"><span></span></a>
+                <a href="#" class="js-next" onclick="plusSlides(1)"><span></span></a>
+            </div>
+        </section>
+
+        <section class="book-blok">
+            <div class="card">
+                <a href="Books/Prosto_Massa.html">
+                    <div><img src="photo/books/prostoMasa_1.jpg"  class="book-img" alt="book"></div>
+                    <p>Просто Маса</p>
+                </a>
+                <p>830р.</p>
+            </div>
+            
+            <div class="card">
+                <a href="Books/Lunapark.html">
+                    <div><img src="photo/books/lunapark_1.jpg"  class="book-img" alt="book"></div>
+                    <p>Лунапарк</p>
+                </a>
+                   <p>500р.</p>
+            </div>
+            
+            <div class="card">
+                <a href="Books/Zov_Ktylhy.html">
+                    <div><img src="photo/books/zovKtulhu_1.jpg"  class="book-img" alt="book"></div>
+                    <p>Зов Ктулху</p>
+                </a>
+                   <p>460р.</p>
+            </div>
+                
+            <div class="card">
+                <a href="Books/Bibliotekari.html">
+                    <div><img src="photo/books/Bibliotekar_1.jpg"  class="book-img" alt="book"></div>
+                    <p>Библиотекарь</p>
+                </a>
+                    <p><s>690р.</s> 400р.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="menu">
+                <a href="mainPage.html">Главная</a>
+                <a href="books.html">Книги</a>
+                <a href="comics.html">Комиксы</a>
+                <a href="recomendating.html">Рекомендации</a>
+                <a href="sales.html">Скидки</a>
+            </div>
+
+            <div id="media">
+                <a><img src="icons/telegram.png" alt="telegram"></a>
+                <a><img src="icons/instagram.png" alt="instagram"></a>
+                <a><img src="icons/vk.png" alt="vkontakte"></a>
+            </div>
+
+            <div id="adres">
+                <p>На полку</p>
+                <p>Адрес 1</p>
+                <p>Адерус 2</p>
+            </div>
+        </footer>
+    </body>
+</html>
